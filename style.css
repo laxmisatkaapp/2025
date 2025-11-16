@@ -1,148 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f4f4;color:#222}
+header{background:#111;padding:15px 0}
+header .container{width:90%;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{color:#fff;font-size:24px;font-weight:700}
+.cta-btn{background:#ffcc00;padding:10px 18px;border-radius:5px;color:#000;font-weight:700;text-decoration:none}
+.hero{background:linear-gradient(#111,#222);color:#fff;padding:80px 20px;text-align:center}
+.hero h1{font-size:32px}
+.hero-btn{margin-top:20px;display:inline-block;background:#ffcc00;color:#000;padding:12px 24px;border-radius:5px;font-weight:700;text-decoration:none}
+.rates{padding:50px 20px;text-align:center}
+.rate-grid{margin-top:25px;display:grid;grid-gap:20px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.rate-card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 0 5px rgba(0,0,0,.1)}
+.how{padding:50px 20px;background:#fff;text-align:center}
+.how-steps{margin-top:30px;display:flex;flex-wrap:wrap;justify-content:center}
+.step{width:150px;margin:15px;text-align:center}
+.step span{display:inline-block;background:#ffcc00;width:45px;height:45px;line-height:45px;border-radius:50%;font-weight:700}
+.faq{padding:50px 20px}
+.faq-item{margin-top:15px}
+.faq-question{width:100%;padding:12px;background:#eee;border:none;text-align:left;font-size:16px;cursor:pointer}
+.faq-answer{display:none;padding:12px;background:#fff;border-left:3px solid #ffcc00}
+footer{background:#111;color:#fff;text-align:center;padding:15px;margin-top:40px}
 
-body {
-    background: #f4f4f4;
-    color: #222;
+/* MOBILE */
+@media(max-width:768px){
+header .container{flex-direction:column;gap:10px}
+.logo{font-size:20px}
+.cta-btn{font-size:14px}
+.hero{padding:60px 15px}
+.hero h1{font-size:24px}
+.rate-grid{grid-template-columns:1fr}
+.how-steps{flex-direction:column}
+.faq-question,.faq-answer{font-size:14px}
 }
-
-/* Header */
-header {
-    background: #111;
-    padding: 15px 0;
-}
-
-header .container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.cta-btn {
-    background: #ffcc00;
-    padding: 10px 18px;
-    border-radius: 5px;
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(#111, #222);
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 32px;
-}
-
-.hero-btn {
-    margin-top: 20px;
-    display: inline-block;
-    background: #ffcc00;
-    color: #000;
-    padding: 12px 24px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Game Rates */
-.rates {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.rate-grid {
-    margin-top: 25px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.rate-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-/* How to Play */
-.how {
-    padding: 50px 20px;
-    background: #fff;
-    text-align: center;
-}
-
-.how-steps {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.step {
-    width: 150px;
-    margin: 15px;
-    text-align: center;
-}
-
-.step span {
-    display: inline-block;
-    background: #ffcc00;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50%;
-    font-weight: bold;
-}
-
-/* FAQ */
-.faq {
-    padding: 50px 20px;
-}
-
-.faq-item {
-    margin-top: 15px;
-}
-
-.faq-question {
-    width: 100%;
-    padding: 12px;
-    background: #eee;
-    border: none;
-    text-align: left;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.faq-answer {
-    display: none;
-    padding: 12px;
-    background: #fff;
-    border-left: 3px solid #ffcc00;
-}
-
-/* Footer */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+@media(max-width:480px){
+.hero h1{font-size:20px}
+.step span{width:40px;height:40px;line-height:40px}
 }
