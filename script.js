@@ -1,9 +1,4 @@
-const questions = document.querySelectorAll(".faq-question");
-
-questions.forEach(q => {
-    q.addEventListener("click", () => {
-        const answer = q.nextElementSibling;
-        answer.style.display = 
-            answer.style.display === "block" ? "none" : "block";
-    });
+document.querySelectorAll(".faq-question").forEach(q=>{
+q.addEventListener("click",()=>{let a=q.nextElementSibling;
+a.style.display=a.style.display==="block"?"none":"block";});
 });
